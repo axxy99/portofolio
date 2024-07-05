@@ -15,9 +15,9 @@ RewriteRule . /portofolio/index.php [L]
 
 # END WordPress
 # BEGIN Simply Static
-# Arahan (baris) antara "BEGIN Simply Static" dan "END Simply Static"
-# dihasilkan secara dinamis, dan hanya dapat dimodifikasi melalui filter WordPress.
-# Setiap perubahan pada arahan di antara penanda berikut akan ditimpa.
+# The directives (lines) between "BEGIN Simply Static" and "END Simply Static" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
 <Files "E:\xampp\htdocs\portofolio/wp-content/uploads\simply-static\2ef4cd364226a317d10e54d866db9899-debug.txt">
 require all denied
 require host localhost
