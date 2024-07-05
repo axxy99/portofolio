@@ -1,0 +1,25 @@
+
+# BEGIN WordPress
+# Arahan (baris) antara "BEGIN WordPress" dan "END WordPress"
+# dihasilkan secara dinamis, dan hanya dapat dimodifikasi melalui filter WordPress.
+# Setiap perubahan pada arahan di antara penanda berikut akan ditimpa.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /portofolio/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /portofolio/index.php [L]
+</IfModule>
+
+# END WordPress
+# BEGIN Simply Static
+# Arahan (baris) antara "BEGIN Simply Static" dan "END Simply Static"
+# dihasilkan secara dinamis, dan hanya dapat dimodifikasi melalui filter WordPress.
+# Setiap perubahan pada arahan di antara penanda berikut akan ditimpa.
+<Files "E:\xampp\htdocs\portofolio/wp-content/uploads\simply-static\2ef4cd364226a317d10e54d866db9899-debug.txt">
+require all denied
+require host localhost
+</Files>
+# END Simply Static
